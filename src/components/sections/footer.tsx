@@ -1,16 +1,12 @@
 "use client";
 
 import { BlurFade } from "@/components/magicui/blur-fade";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Github, Twitter, MessageCircle, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Github, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/nomadamas", label: "GitHub" },
-  { icon: Twitter, href: "https://twitter.com/nomadamas", label: "Twitter" },
-  { icon: MessageCircle, href: "https://discord.gg/nomadamas", label: "Discord" },
+  { icon: Github, href: "https://github.com/NomaDamas", label: "GitHub" },
 ];
 
 const navLinks = [
@@ -31,8 +27,7 @@ export function Footer() {
               <span className="text-2xl font-bold text-gradient">NomaDamas</span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
-              AI와 오픈소스로 미래를 함께 만들어가는 너드 커뮤니티.
-              강남 한복판에서 실리콘밸리 해커 문화를 경험하세요.
+              AI Open Source Hacker House in Seoul backed by Markr AI
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((link) => (
@@ -66,24 +61,6 @@ export function Footer() {
               ))}
             </ul>
           </BlurFade>
-
-          {/* Newsletter */}
-          <BlurFade delay={0.3} inView>
-            <h3 className="font-semibold mb-4">뉴스레터 구독</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              새로운 이벤트와 소식을 가장 먼저 받아보세요.
-            </p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-              <Input
-                type="email"
-                placeholder="이메일 주소"
-                className="flex-1"
-              />
-              <Button type="submit" size="icon" className="shrink-0">
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </form>
-          </BlurFade>
         </div>
 
         <Separator className="mb-8" />
@@ -93,12 +70,12 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>서울특별시 강남구 역삼동</span>
+              <span>서울특별시 강남구 논현동</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
               <a href="mailto:hello@nomadamas.com" className="hover:text-foreground transition-colors">
-                hello@nomadamas.com
+                 vkehfdl1@gmail.com
               </a>
             </div>
             <p>© {new Date().getFullYear()} NomaDamas. All rights reserved.</p>

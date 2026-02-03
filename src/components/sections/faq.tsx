@@ -39,6 +39,10 @@ const faqs = [
     answer:
       "자유롭게 해커하우스를 오가며 NomaDamas 멤버들과 AI 오픈소스를 함께 빌드할 수 있습니다. GPU 서버 등의 리소스 지원도 제공됩니다.",
   },
+  {
+    question: "NomaDamas는 어떻게 운영되나요?",
+    answer: "NomaDamas는 Markr AI의 후원으로 운영되고 있습니다."
+  },
 ];
 
 export function FAQ() {
