@@ -4,6 +4,7 @@ import {
   About,
   Values,
   Programs,
+  MembersCTA,
   Media,
   FAQ,
   Footer,
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Programs />
+        <MembersCTA />
         <Values />
         <Media />
         <FAQ />

@@ -3,6 +3,7 @@ export { Hero } from "./hero";
 export { About } from "./about";
 export { Values } from "./values";
 export { Programs } from "./programs";
+export { MembersCTA } from "./members-cta";
 export { Media } from "./media";
 export { FAQ } from "./faq";
 export { Footer } from "./footer";
